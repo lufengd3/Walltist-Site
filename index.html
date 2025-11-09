@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Walltist (壁纸艺术家) - iOS 个性化壁纸管理应用，帮助您发现、整理和应用相册中的精美壁纸">
+
+    <!-- 多语言元信息 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://your-domain.com/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://your-domain.com/">
+
+    <meta name="description"
+        content="Walltist - iOS personalized wallpaper management app, helping you discover, organize and apply beautiful wallpapers from your photo library"
+        data-i18n-key="meta.description">
     <meta name="keywords" content="壁纸, wallpaper, iOS, macOS, 相册管理, 小组件, widget, 壁纸管理">
     <meta name="author" content="Walltist">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Walltist - 壁纸艺术家">
-    <meta property="og:description" content="iOS 个性化壁纸管理应用，帮助您发现、整理和应用相册中的精美壁纸">
+    <meta property="og:title" content="Walltist - Wallpaper Artist" data-i18n-key="meta.ogTitle">
+    <meta property="og:description"
+        content="iOS personalized wallpaper management app, helping you discover, organize and apply beautiful wallpapers from your photo library"
+        data-i18n-key="meta.ogDescription">
     <meta property="og:image" content="https://your-domain.com/images/og-image.jpg">
     <meta property="og:url" content="https://your-domain.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US" data-i18n-key="meta.ogLocale">
+    <meta property="og:locale:alternate" content="zh_CN">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Walltist - 壁纸艺术家">
-    <meta name="twitter:description" content="iOS 个性化壁纸管理应用，帮助您发现、整理和应用相册中的精美壁纸">
+    <meta name="twitter:title" content="Walltist - Wallpaper Artist" data-i18n-key="meta.twitterTitle">
+    <meta name="twitter:description"
+        content="iOS personalized wallpaper management app, helping you discover, organize and apply beautiful wallpapers from your photo library"
+        data-i18n-key="meta.twitterDescription">
     <meta name="twitter:image" content="https://your-domain.com/images/twitter-image.jpg">
 
-    <title>Walltist - 壁纸艺术家</title>
+    <title data-i18n-key="meta.title">Walltist - Wallpaper Artist</title>
 
     <!-- 性能优化：预加载关键资源 -->
     <link rel="preload" href="css/style.css" as="style">
@@ -36,6 +50,15 @@
                 <img src="images/logo.png" alt="Walltist Logo" class="logo-icon">
                 <span class="logo-text">Walltist</span>
             </div>
+
+            <!-- 语言切换器 -->
+            <div class="language-switcher">
+                <label for="language-select" class="sr-only" data-i18n="nav.languageLabel">Select Language</label>
+                <select id="language-select" class="language-select" aria-label="Language Selector">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
         </div>
     </nav>
 
@@ -44,8 +67,9 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">发现相册中的壁纸艺术</h1>
-                    <p class="hero-subtitle">iOS 个性化壁纸管理应用，轻松发现、整理和应用您相册中的精美照片作为壁纸</p>
+                    <h1 class="hero-title" data-i18n="hero.title">Discover Wallpaper Art in Your Photos</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">iOS personalized wallpaper management app, easily
+                        discover, organize and apply beautiful photos from your library as wallpapers</p>
                 </div>
             </div>
         </div>
@@ -54,36 +78,43 @@
     <!-- 功能特性区域 -->
     <section class="features" id="features">
         <div class="container">
-            <!-- <h2 class="section-title">核心功能</h2> -->
+            <!-- <h2 class="section-title" data-i18n="features.title">核心功能</h2> -->
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3 class="feature-title">🎲 随机照片发现</h3>
-                    <p class="feature-description">小组件和应用随机展示相册照片，配备快捷操作按钮（收藏、刷新、删除）</p>
+                    <h3 class="feature-title" data-i18n="features.random.title">🎲 Random Photo Discovery</h3>
+                    <p class="feature-description" data-i18n="features.random.description">Widget and app randomly
+                        display photos from your library, with quick action buttons (favorite, refresh, delete)</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">📁 智能整理</h3>
-                    <p class="feature-description">根据照片宽高比自动分类整理到壁纸集合，收藏的照片自动归入"Walltist"相册</p>
+                    <h3 class="feature-title" data-i18n="features.organize.title">📁 Smart Organization</h3>
+                    <p class="feature-description" data-i18n="features.organize.description">Automatically categorize
+                        photos into wallpaper collections based on aspect ratio, favorited photos are automatically
+                        added to "Walltist" album</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">📱 小组件集成</h3>
-                    <p class="feature-description">iOS 小组件支持，直接在主屏幕或桌面快速浏览和管理照片</p>
+                    <h3 class="feature-title" data-i18n="features.widget.title">📱 Widget Integration</h3>
+                    <p class="feature-description" data-i18n="features.widget.description">iOS widget support, quickly
+                        browse and manage photos directly from your home screen or desktop</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">🔄 跨设备同步</h3>
-                    <p class="feature-description">通过本地网络在 iOS 和 Mac/PC 之间同步，远程设置壁纸</p>
+                    <h3 class="feature-title" data-i18n="features.sync.title">🔄 Cross-Device Sync</h3>
+                    <p class="feature-description" data-i18n="features.sync.description">Sync between iOS and Mac/PC
+                        over local network, remotely set wallpapers</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">⚡ 一键操作</h3>
-                    <p class="feature-description">快速管理照片，一键收藏、隐藏或删除，让照片管理变得轻松简单</p>
+                    <h3 class="feature-title" data-i18n="features.oneclick.title">⚡ One-Click Actions</h3>
+                    <p class="feature-description" data-i18n="features.oneclick.description">Quickly manage photos,
+                        favorite, hide or delete with one click, making photo management effortless</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">✨ 无缝体验</h3>
-                    <p class="feature-description">小组件功能与应用完全同步，在任何地方都能获得一致的使用体验</p>
+                    <h3 class="feature-title" data-i18n="features.seamless.title">✨ Seamless Experience</h3>
+                    <p class="feature-description" data-i18n="features.seamless.description">Widget functionality fully
+                        synced with the app, consistent experience everywhere</p>
                 </div>
             </div>
         </div>
@@ -93,7 +124,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="copyright">&copy; 2025 Walltist. All rights reserved.</p>
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Walltist. All rights reserved.</p>
                 <!-- <div class="social-links">
           <a href="https://twitter.com/walltist" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
