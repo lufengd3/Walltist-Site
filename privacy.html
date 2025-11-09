@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 多语言元信息 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://your-domain.com/privacy.html?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://your-domain.com/privacy.html?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://your-domain.com/privacy.html">
+
+    <meta name="description" content="Walltist Privacy Policy - Learn how we protect your privacy and handle your data"
+        data-i18n-key="meta.description">
+    <meta name="keywords" content="privacy policy, 隐私政策, Walltist, data protection">
+    <meta name="author" content="Walltist">
+
+    <title data-i18n-key="meta.title">Privacy Policy - Walltist</title>
+
+    <!-- 性能优化：预加载关键资源 -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .privacy-content h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-content p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .privacy-content ul {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-light);
+        }
+
+        .privacy-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .privacy-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .privacy-content a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .privacy-content strong {
+            color: var(--text-color);
+        }
+
+        .last-updated {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-content {
+                padding: 100px 20px 60px;
+            }
+
+            .privacy-content h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-content h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Walltist Logo" class="logo-icon">
+                <span class="logo-text">Walltist</span>
+            </a>
+
+            <!-- 语言切换器 -->
+            <div class="language-switcher">
+                <label for="language-select" class="sr-only" data-i18n="nav.languageLabel">Select Language</label>
+                <select id="language-select" class="language-select" aria-label="Language Selector">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 隐私政策内容 -->
+    <main class="privacy-content">
+        <!-- English version -->
+        <div id="en">
+            <h1 data-i18n="privacy.title">Privacy Policy</h1>
+            <p class="last-updated"><strong data-i18n="privacy.lastUpdated">Last updated:</strong> <span
+                    data-i18n="privacy.date">August 19, 2025</span></p>
+
+            <h2 data-i18n="privacy.collect.title">Information We Collect</h2>
+            <p data-i18n="privacy.collect.content">Walltist is designed to respect your privacy. We do not collect,
+                store, or transmit any personal information or photos from your device. All photo processing and
+                management happens locally on your device.</p>
+
+            <h2 data-i18n="privacy.photo.title">Photo Access</h2>
+            <p data-i18n="privacy.photo.intro">The app requires access to your photo library to:</p>
+            <ul>
+                <li data-i18n="privacy.photo.item1">Display and organize your photos</li>
+                <li data-i18n="privacy.photo.item2">Create custom albums for wallpapers</li>
+                <li data-i18n="privacy.photo.item3">Allow you to save images from web sources</li>
+            </ul>
+            <p data-i18n="privacy.photo.note">All photo access is handled locally on your device. We do not upload,
+                share, or transmit your photos to any external servers.</p>
+
+            <h2 data-i18n="privacy.camera.title">Camera Access</h2>
+            <p data-i18n="privacy.camera.content">Camera access is used solely for QR code scanning functionality to
+                connect with remote devices. No photos or videos are captured or stored through this feature.</p>
+
+            <h2 data-i18n="privacy.network.title">Local Network Access</h2>
+            <p data-i18n="privacy.network.content">Local network access is used to enable the remote sync feature,
+                allowing you to access your photos from other devices on the same Wi-Fi network. This connection is
+                direct and local — no data passes through external servers.</p>
+
+            <h2 data-i18n="privacy.storage.title">Data Storage</h2>
+            <p data-i18n="privacy.storage.intro">All app data is stored locally on your device using:</p>
+            <ul>
+                <li data-i18n="privacy.storage.item1">iOS Photos framework for photo management</li>
+                <li data-i18n="privacy.storage.item2">SwiftData for app preferences and favorites</li>
+                <li data-i18n="privacy.storage.item3">App Groups for widget functionality</li>
+            </ul>
+            <p data-i18n="privacy.storage.note">No data is transmitted to external servers or third parties.</p>
+
+            <h2 data-i18n="privacy.thirdparty.title">Third-Party Services</h2>
+            <p data-i18n="privacy.thirdparty.content">This app does not integrate with any third-party analytics,
+                advertising, or data collection services.</p>
+
+            <h2 data-i18n="privacy.children.title">Children's Privacy</h2>
+            <p data-i18n="privacy.children.content">Our app is suitable for all ages and does not collect any personal
+                information from children or adults.</p>
+
+            <h2 data-i18n="privacy.changes.title">Changes to This Policy</h2>
+            <p data-i18n="privacy.changes.content">We may update this privacy policy from time to time. Any changes will
+                be reflected in the app and on our website.</p>
+
+            <h2 data-i18n="privacy.contact.title">Contact Us</h2>
+            <p data-i18n="privacy.contact.intro">If you have any questions about this privacy policy, please contact us
+                at:</p>
+            <p><span data-i18n="privacy.contact.email">Email:</span> <a
+                    href="mailto:support@walltist.art">support@walltist.art</a></p>
+        </div>
+
+        <!-- 中文版 -->
+        <div id="zh" style="display:none;">
+            <h1 data-i18n="privacy.title">隐私政策</h1>
+            <p class="last-updated"><strong data-i18n="privacy.lastUpdated">最后更新：</strong><span
+                    data-i18n="privacy.date">2025年08月19日</span></p>
+
+            <h2 data-i18n="privacy.collect.title">我们收集的信息</h2>
+            <p data-i18n="privacy.collect.content">为尊重您的隐私，Walltist 不会收集、存储或传输您设备上的任何个人信息或照片。所有照片处理和管理均在您的设备本地完成。</p>
+
+            <h2 data-i18n="privacy.photo.title">相册访问</h2>
+            <p data-i18n="privacy.photo.intro">应用需要相册访问权限用于：</p>
+            <ul>
+                <li data-i18n="privacy.photo.item1">显示与整理您的照片</li>
+                <li data-i18n="privacy.photo.item2">创建用于壁纸的自定义相册</li>
+                <li data-i18n="privacy.photo.item3">允许您从网页保存图片</li>
+            </ul>
+            <p data-i18n="privacy.photo.note">所有相册访问均在您的设备本地进行。我们不会上传、共享或传输您的照片到任何外部服务器。</p>
+
+            <h2 data-i18n="privacy.camera.title">相机访问</h2>
+            <p data-i18n="privacy.camera.content">相机权限仅用于扫描二维码以连接远程设备。此功能不会拍摄或存储任何照片或视频。</p>
+
+            <h2 data-i18n="privacy.network.title">本地网络访问</h2>
+            <p data-i18n="privacy.network.content">本地网络权限用于启用远程访问功能，使您可以在同一 Wi-Fi
+                网络下从其他设备访问您的照片。该连接为点对点的本地连接，不经过任何外部服务器。</p>
+
+            <h2 data-i18n="privacy.storage.title">数据存储</h2>
+            <p data-i18n="privacy.storage.intro">应用数据仅存储在您的设备本地，包括：</p>
+            <ul>
+                <li data-i18n="privacy.storage.item1">使用 iOS Photos 框架进行照片管理</li>
+                <li data-i18n="privacy.storage.item2">使用 SwiftData 存储应用偏好与收藏</li>
+                <li data-i18n="privacy.storage.item3">使用 App Groups 支持小组件功能</li>
+            </ul>
+            <p data-i18n="privacy.storage.note">我们不会将数据传输给任何外部服务器或第三方。</p>
+
+            <h2 data-i18n="privacy.thirdparty.title">第三方服务</h2>
+            <p data-i18n="privacy.thirdparty.content">本应用未集成任何第三方分析、广告或数据收集服务。</p>
+
+            <h2 data-i18n="privacy.children.title">儿童隐私</h2>
+            <p data-i18n="privacy.children.content">本应用适用于所有年龄段，不会收集任何儿童或成人的个人信息。</p>
+
+            <h2 data-i18n="privacy.changes.title">本政策的变更</h2>
+            <p data-i18n="privacy.changes.content">我们可能会不时更新本隐私政策。任何变更将会在应用内及官网予以展示。</p>
+
+            <h2 data-i18n="privacy.contact.title">联系我们</h2>
+            <p data-i18n="privacy.contact.intro">如对本隐私政策有任何疑问，请通过以下方式联系：</p>
+            <p><span data-i18n="privacy.contact.email">邮箱：</span><a
+                    href="mailto:support@walltist.art">support@walltist.art</a></p>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Walltist. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
