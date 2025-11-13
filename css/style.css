@@ -34,6 +34,21 @@ body {
   background-color: var(--background);
 }
 
+/* 整页背景图铺满 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 /* 排版 */
 h1 {
   font-size: 2.5rem;
@@ -98,6 +113,13 @@ img {
   }
 }
 
+/* 半透明内容容器，使内容浮于背景图之上 */
+.page-glass {
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+  min-height: 100vh;
+}
+
 /* 桌面：1024px */
 @media (min-width: 1024px) {
   h1 {
@@ -119,7 +141,8 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--background);
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
   box-shadow: var(--shadow);
   z-index: 1000;
   padding: 1rem 0;
@@ -169,7 +192,7 @@ img {
 /* Hero 区域样式 */
 .hero {
   padding: 100px 0 60px;
-  background: linear-gradient(135deg, var(--background-alt) 0%, var(--background) 100%);
+  background: transparent;
 }
 
 .hero-content {
@@ -249,7 +272,7 @@ img {
 /* 功能特性区域样式 */
 .features {
   padding-bottom: 80px;
-  background-color: var(--background);
+  background-color: transparent;
 }
 
 .section-title {
@@ -388,8 +411,8 @@ img {
 /* 页脚样式 */
 .footer {
   padding: 3rem 0;
-  background-color: var(--text-color);
-  color: var(--background);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .footer-content {
